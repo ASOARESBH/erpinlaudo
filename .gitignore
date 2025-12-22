@@ -1,0 +1,29 @@
+# Arquivos de configuração sensíveis
+config.php
+
+# Certificados e chaves privadas
+certs/*.pem
+certs/*.key
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/
+uploads/*
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
