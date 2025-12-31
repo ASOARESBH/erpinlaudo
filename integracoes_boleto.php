@@ -57,15 +57,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['tipo']) && $_POST['tip
     
     if (!isset($erro)) {
         try {
-            // Guardar client_id em config, certificado em api_key e private key em api_secret
-            $config = json_encode([
+            // Guardar client_id em configuracoes (JSON), certificado em api_key e private key em api_secret
+            $configuracoes = json_encode([
                 'client_id' => $clientId,
                 'ambiente' => $ambiente
             ]);
             
-            $sql = "UPDATE integracoes SET config = ?, api_key = ?, api_secret = ?, ativo = ? WHERE tipo = 'cora'";
-            $stmt = $conn->prepare($sql);
-            $stmt->execute([$config, $certificadoPath, $privateKeyPath, $ativo]);
+            // Verificar se registro existe
+            $stmtCheck = $conn->prepare("SELECT id FROM integracoes WHERE tipo = 'cora'");
+            $stmtCheck->execute();
+            $existe = $stmtCheck->fetch();
+            
+            if ($existe) {
+                // UPDATE
+                $sql = "UPDATE integracoes SET configuracoes = ?, api_key = ?, api_secret = ?, ativo = ? WHERE tipo = 'cora'";
+                $stmt = $conn->prepare($sql);
+                $stmt->execute([$configuracoes, $certificadoPath, $privateKeyPath, $ativo]);
+            } else {
+                // INSERT
+                $sql = "INSERT INTO integracoes (tipo, configuracoes, api_key, api_secret, ativo) VALUES ('cora', ?, ?, ?, ?)";
+                $stmt = $conn->prepare($sql);
+                $stmt->execute([$configuracoes, $certificadoPath, $privateKeyPath, $ativo]);
+            }
             
             $mensagem = "Configurações do CORA atualizadas com sucesso!";
             
@@ -86,9 +99,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['tipo']) && $_POST['tip
     $ativo = isset($_POST['stripe_ativo']) ? 1 : 0;
     
     try {
-        $sql = "UPDATE integracoes SET api_key = ?, api_secret = ?, ativo = ? WHERE tipo = 'stripe'";
-        $stmt = $conn->prepare($sql);
-        $stmt->execute([$apiKey, $apiSecret, $ativo]);
+        // Verificar se registro existe
+        $stmtCheck = $conn->prepare("SELECT id FROM integracoes WHERE tipo = 'stripe'");
+        $stmtCheck->execute();
+        $existe = $stmtCheck->fetch();
+        
+        if ($existe) {
+            // UPDATE
+            $sql = "UPDATE integracoes SET api_key = ?, api_secret = ?, ativo = ? WHERE tipo = 'stripe'";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$apiKey, $apiSecret, $ativo]);
+        } else {
+            // INSERT
+            $sql = "INSERT INTO integracoes (tipo, api_key, api_secret, ativo) VALUES ('stripe', ?, ?, ?)";
+            $stmt = $conn->prepare($sql);
+            $stmt->execute([$apiKey, $apiSecret, $ativo]);
+        }
         
         $mensagem = "Configurações do Stripe atualizadas com sucesso!";
         

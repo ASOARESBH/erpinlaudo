@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $descricao = sanitize($_POST['descricao']);
     $valorTotal = (float)str_replace(',', '.', str_replace('.', '', $_POST['valor_total']));
     $formaPagamento = sanitize($_POST['forma_pagamento']);
+    $gatewayPagamento = sanitize($_POST['gateway_pagamento'] ?? 'cora');
     $recorrencia = (int)$_POST['recorrencia'];
     $status = sanitize($_POST['status']);
     $dataInicio = !empty($_POST['data_inicio']) ? $_POST['data_inicio'] : null;
@@ -64,12 +65,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             // Atualizar
             $sql = "UPDATE contratos SET 
                     cliente_id = ?, tipo = ?, descricao = ?, valor_total = ?,
-                    forma_pagamento = ?, recorrencia = ?, status = ?, data_inicio = ?,
+                    forma_pagamento = ?, gateway_pagamento = ?, recorrencia = ?, status = ?, data_inicio = ?,
                     data_fim = ?, observacoes = ?, arquivo_contrato = ?
                     WHERE id = ?";
             $stmt = $conn->prepare($sql);
             $stmt->execute([
-                $clienteId, $tipo, $descricao, $valorTotal, $formaPagamento,
+                $clienteId, $tipo, $descricao, $valorTotal, $formaPagamento, $gatewayPagamento,
                 $recorrencia, $status, $dataInicio, $dataFim, $observacoes,
                 $arquivoContrato, $contratoId
             ]);
@@ -77,12 +78,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             // Inserir
             $sql = "INSERT INTO contratos (
-                    cliente_id, tipo, descricao, valor_total, forma_pagamento,
+                    cliente_id, tipo, descricao, valor_total, forma_pagamento, gateway_pagamento,
                     recorrencia, status, data_inicio, data_fim, observacoes, arquivo_contrato
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($sql);
             $stmt->execute([
-                $clienteId, $tipo, $descricao, $valorTotal, $formaPagamento,
+                $clienteId, $tipo, $descricao, $valorTotal, $formaPagamento, $gatewayPagamento,
                 $recorrencia, $status, $dataInicio, $dataFim, $observacoes, $arquivoContrato
             ]);
             
@@ -191,7 +192,7 @@ include 'header.php';
                 
                 <div class="form-group">
                     <label>Forma de Pagamento *</label>
-                    <select name="forma_pagamento" required>
+                    <select name="forma_pagamento" id="forma_pagamento" required onchange="atualizarGateway()">
                         <option value="">Selecione...</option>
                         <option value="boleto" <?php echo ($contrato && $contrato['forma_pagamento'] == 'boleto') ? 'selected' : ''; ?>>Boleto</option>
                         <option value="cartao_credito" <?php echo ($contrato && $contrato['forma_pagamento'] == 'cartao_credito') ? 'selected' : ''; ?>>Cartão de Crédito</option>
@@ -200,6 +201,18 @@ include 'header.php';
                         <option value="dinheiro" <?php echo ($contrato && $contrato['forma_pagamento'] == 'dinheiro') ? 'selected' : ''; ?>>Dinheiro</option>
                         <option value="transferencia" <?php echo ($contrato && $contrato['forma_pagamento'] == 'transferencia') ? 'selected' : ''; ?>>Transferência</option>
                     </select>
+                </div>
+                
+                <div class="form-group" id="gateway_group" style="display: none;">
+                    <label>Gateway de Pagamento *</label>
+                    <select name="gateway_pagamento" id="gateway_pagamento">
+                        <option value="cora" <?php echo ($contrato && $contrato['gateway_pagamento'] == 'cora') ? 'selected' : ''; ?>>CORA (Boleto)</option>
+                        <option value="mercadopago" <?php echo ($contrato && $contrato['gateway_pagamento'] == 'mercadopago') ? 'selected' : ''; ?>>Mercado Pago</option>
+                        <option value="stripe" <?php echo ($contrato && $contrato['gateway_pagamento'] == 'stripe') ? 'selected' : ''; ?>>Stripe</option>
+                    </select>
+                    <small style="display: block; margin-top: 0.5rem; color: #64748b;">
+                        <span id="gateway_info">Selecione o gateway de pagamento</span>
+                    </small>
                 </div>
                 
                 <div class="form-group">
@@ -254,5 +267,37 @@ include 'header.php';
         </form>
     </div>
 </div>
+
+<script>
+function atualizarGateway() {
+    const formaPagamento = document.getElementById('forma_pagamento').value;
+    const gatewayGroup = document.getElementById('gateway_group');
+    const gatewaySelect = document.getElementById('gateway_pagamento');
+    const gatewayInfo = document.getElementById('gateway_info');
+    
+    // Mostrar gateway apenas para boleto, cartão ou pix
+    const formasComGateway = ['boleto', 'cartao_credito', 'cartao_debito', 'pix'];
+    
+    if (formasComGateway.includes(formaPagamento)) {
+        gatewayGroup.style.display = 'block';
+        
+        // Configurar opções baseado na forma de pagamento
+        if (formaPagamento === 'boleto') {
+            gatewaySelect.value = 'cora';
+            gatewayInfo.textContent = 'CORA: Gera boleto registrado automaticamente';
+        } else {
+            gatewaySelect.value = 'mercadopago';
+            gatewayInfo.textContent = 'Mercado Pago: Aceita cartão, pix e boleto';
+        }
+    } else {
+        gatewayGroup.style.display = 'none';
+    }
+}
+
+// Executar ao carregar a página
+document.addEventListener('DOMContentLoaded', function() {
+    atualizarGateway();
+});
+</script>
 
 <?php include 'footer.php'; ?>

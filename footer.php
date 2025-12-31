@@ -65,5 +65,21 @@
             setTimeout(() => div.remove(), 5000);
         }
     </script>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; <?php echo date('Y'); ?> INLAUDO - Todos os direitos reservados</p>
+                <p class="footer-version">Versão 5.0</p>
+            </div>
+            <div class="footer-right">
+                <?php if (function_exists('getTempoSessao')): ?>
+                <p class="footer-session">
+                    <i class="fas fa-clock"></i> Tempo de sessão: <?php echo getTempoSessao(); ?>
+                </p>
+                <?php endif; ?>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,284 @@
+[03-Dec-2025 12:54:04 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'inlaud99_erpinlaudo.contratos' doesn't exist in /home2/inlaud99/public_html/erp/contratos.php:36
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/contratos.php(36): PDO->prepare('SELECT ct.*, c....')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/contratos.php on line 36
+[03-Dec-2025 13:59:57 America/Sao_Paulo] Erro ao gerar fatura Stripe: Erro ao criar fatura: Invalid boolean: 1
+[03-Dec-2025 14:01:37 America/Sao_Paulo] Erro ao gerar fatura Stripe: Erro ao criar fatura: Invalid boolean: 1
+[03-Dec-2025 15:42:10 America/Sao_Paulo] Erro ao gerar fatura Stripe: Erro ao criar fatura: Invalid boolean: 1
+[04-Dec-2025 22:22:51 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'inlaud99_erpinlaudo.email_config' doesn't exist in /home2/inlaud99/public_html/erp/email_config.php:101
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/email_config.php(101): PDO->query('SELECT * FROM e...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/email_config.php on line 101
+[22-Dec-2025 11:37:18 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 15:25:01 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 15:27:56 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 15:28:43 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 15:32:39 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 17:58:36 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/public_html/erp/usuarios.php:128
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/public_html/erp/usuarios.php on line 128
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:40 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 44
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:20:49 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:23:10 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:24:09 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/public_html/erp/usuarios.php:128
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/public_html/erp/usuarios.php on line 128
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:24:21 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:26:06 America/Sao_Paulo] Erro ao registrar logout: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`inlaud99_erpinlaudo`.`logs_acesso`, CONSTRAINT `logs_acesso_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id`) ON DELETE SET NULL)
+[22-Dec-2025 18:39:56 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/public_html/erp/usuarios.php:67
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/public_html/erp/usuarios.php on line 67
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:39:59 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:40:16 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/public_html/erp/usuarios.php:67
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/public_html/erp/usuarios.php on line 67
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:06 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 44
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:11 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 44
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:15 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:17 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/public_html/erp/usuarios.php:67
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/public_html/erp/usuarios.php on line 67
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 139
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "tipo" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 142
+[22-Dec-2025 18:42:24 America/Sao_Paulo] PHP Warning:  Undefined array key "cnpj" in /home2/inlaud99/public_html/erp/criar_usuario_cliente.php on line 149
+[22-Dec-2025 20:33:54 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 20:39:11 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/public_html/erp/integracoes_boleto.php on line 129
+[22-Dec-2025 21:08:03 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cr.contrato_id' in 'field list' in /home2/inlaud99/public_html/erp/faturamento_completo.php:68
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturamento_completo.php(68): PDO->query('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturamento_completo.php on line 68
+[22-Dec-2025 21:08:48 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cr.contrato_id' in 'field list' in /home2/inlaud99/public_html/erp/faturamento_completo.php:68
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturamento_completo.php(68): PDO->query('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturamento_completo.php on line 68
+[22-Dec-2025 21:17:14 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cr.contrato_id' in 'field list' in /home2/inlaud99/public_html/erp/faturamento_completo.php:68
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturamento_completo.php(68): PDO->query('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturamento_completo.php on line 68
+[22-Dec-2025 21:17:17 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cr.contrato_id' in 'field list' in /home2/inlaud99/public_html/erp/faturamento_completo.php:68
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturamento_completo.php(68): PDO->query('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturamento_completo.php on line 68
+[22-Dec-2025 21:17:21 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[22-Dec-2025 21:17:26 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[22-Dec-2025 21:17:37 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[22-Dec-2025 21:18:06 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[22-Dec-2025 21:20:24 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[22-Dec-2025 21:20:31 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[22-Dec-2025 21:26:36 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/public_html/erp/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/public_html/erp/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/public_html/erp/faturas_mercadopago.php on line 61
+[28-Dec-2025 19:50:45 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php on line 61
+[28-Dec-2025 19:52:12 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/erp.inlaudo.com.br/usuarios.php:67
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/usuarios.php on line 67
+[28-Dec-2025 20:26:34 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 129
+[28-Dec-2025 20:35:35 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "MercadoPagoIntegracao" not found in /home2/inlaud99/erp.inlaudo.com.br/webhook_mercadopago.php:53
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/webhook_mercadopago.php on line 53
+[28-Dec-2025 20:37:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:41:07 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Class "MercadoPagoIntegracao" not found in /home2/inlaud99/erp.inlaudo.com.br/webhook_mercadopago.php:53
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/webhook_mercadopago.php on line 53
+[28-Dec-2025 20:42:10 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:42:11 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:42:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:42:14 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:42:15 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:49:40 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarCNPJ() in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php:272
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/portal_cliente.php on line 272
+[28-Dec-2025 20:50:19 America/Sao_Paulo] PHP Warning:  Undefined array key "parcelas" in /home2/inlaud99/erp.inlaudo.com.br/cliente_contratos.php on line 345
+[28-Dec-2025 20:52:40 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php on line 61
+[28-Dec-2025 20:53:01 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 129
+[28-Dec-2025 21:10:17 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 129
+[28-Dec-2025 21:14:29 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 129
+[28-Dec-2025 21:15:31 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.endereco' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php:46
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php(46): PDO->prepare('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 46
+[28-Dec-2025 21:15:41 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.endereco' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php:46
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php(46): PDO->prepare('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 46
+[28-Dec-2025 21:19:32 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ct.titulo' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php:61
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php(61): PDO->prepare('SELECT \n       ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/faturas_mercadopago.php on line 61
+[28-Dec-2025 21:26:27 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.endereco' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php:46
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php(46): PDO->prepare('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 46
+[28-Dec-2025 21:37:55 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.endereco' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php:46
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php(46): PDO->prepare('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 46
+[28-Dec-2025 21:38:30 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.endereco' in 'field list' in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php:46
+Stack trace:
+#0 /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php(46): PDO->prepare('\n    SELECT \n  ...')
+#1 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 46
+[28-Dec-2025 22:03:08 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 155
+[28-Dec-2025 22:03:33 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 155
+[28-Dec-2025 22:03:44 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 155
+[28-Dec-2025 22:23:18 America/Sao_Paulo] PHP Warning:  require(/home2/inlaud99/erp.inlaudo.com.br/gerar_pix_mercadopago.php): Failed to open stream: No such file or directory in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 47
+[28-Dec-2025 22:23:51 America/Sao_Paulo] PHP Warning:  require(/home2/inlaud99/erp.inlaudo.com.br/gerar_pix_mercadopago.php): Failed to open stream: No such file or directory in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 47
+[28-Dec-2025 22:24:28 America/Sao_Paulo] PHP Warning:  require(/home2/inlaud99/erp.inlaudo.com.br/gerar_pix_mercadopago.php): Failed to open stream: No such file or directory in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 47
+[28-Dec-2025 22:24:31 America/Sao_Paulo] PHP Warning:  require(/home2/inlaud99/erp.inlaudo.com.br/gerar_pix_mercadopago.php): Failed to open stream: No such file or directory in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 47
+[28-Dec-2025 22:24:42 America/Sao_Paulo] PHP Warning:  require(/home2/inlaud99/erp.inlaudo.com.br/gerar_pix_mercadopago.php): Failed to open stream: No such file or directory in /home2/inlaud99/erp.inlaudo.com.br/gerar_link_pagamento.php on line 47
+[28-Dec-2025 23:02:04 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 155
+[28-Dec-2025 23:02:13 America/Sao_Paulo] PHP Fatal error:  Uncaught Error: Call to undefined function formatarDataHora() in /home2/inlaud99/erp.inlaudo.com.br/usuarios.php:67
+Stack trace:
+#0 {main}
+  thrown in /home2/inlaud99/erp.inlaudo.com.br/usuarios.php on line 67
+[28-Dec-2025 23:02:20 America/Sao_Paulo] PHP Warning:  Undefined array key "config" in /home2/inlaud99/erp.inlaudo.com.br/integracoes_boleto.php on line 155
+[29-Dec-2025 10:25:56 America/Sao_Paulo] PHP Warning:  Undefined array key "parcelas" in /home2/inlaud99/erp.inlaudo.com.br/cliente_contratos.php on line 345
+[29-Dec-2025 10:35:56 America/Sao_Paulo] PHP Warning:  Undefined array key "parcelas" in /home2/inlaud99/erp.inlaudo.com.br/cliente_contratos.php on line 345
